@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>4</title>
+
+  <style>
+    .mainBlock {
+      height: 1000px;
+      width: 1100px;
+      border: 3px solid black;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-around;
+      align-items: center;
+      background-color: blue;
+      float: left;
+    }
+
+    .item {
+      height: 120px;
+      width: 120px;
+      border: 3px solid black;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+
+    .player {
+      float: left;
+      margin-left: 20px;
+      font-size: 20px;
+    }
+
+    .player span {
+      color: green;
+      font-size: 25px;
+    }
+    .item-selected-0 {background-color: #FF0000;}
+    .item-selected-1 {background-color: #0FF000;}
+    .item-selected-2 {background-color: #00FF00;}
+    .item-selected-3 {background-color: #000FF0;}
+    .item-win {
+      background-color: #0F0F0F;
+    }
+  </style>
+</head>
+<body>
+  <div class="mainBlock" id="mainBlock"></div>
+  <div class="player">player: <span>1</span></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
